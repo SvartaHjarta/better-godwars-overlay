@@ -48,9 +48,9 @@ public class BetterGodwarsOverlayOverlay extends OverlayPanel
 				final int killCount = godInfo.getCurrentKc();
 				final String name = godInfo.getGod().getName();
 
-                if (!config.showZeroKc() && killCount == 0) {
-                    return;
-                }
+				if (!config.showZeroKc() && killCount == 0) {
+					return;
+				}
 
 				panelComponent.getChildren().add(LineComponent.builder()
 								.left(config.shortGodNames() ? name.substring(0, 2) : name)
